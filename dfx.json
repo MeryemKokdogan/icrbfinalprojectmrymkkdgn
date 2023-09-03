@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "icrbprojectmrymkkdgn_backend": {
+      "candid": "src/icrbprojectmrymkkdgn_backend/icrbprojectmrymkkdgn_backend.did",
+      "package": "icrbprojectmrymkkdgn_backend",
+      "type": "rust"
+    },
+    "icrbprojectmrymkkdgn_frontend": {
+      "dependencies": [
+        "icrbprojectmrymkkdgn_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/icrbprojectmrymkkdgn_frontend/src/index.html"
+      },
+      "source": [
+        "src/icrbprojectmrymkkdgn_frontend/assets",
+        "dist/icrbprojectmrymkkdgn_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
